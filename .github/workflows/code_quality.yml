@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-      - 'releases/*'
 
 jobs:
   qodana:
@@ -14,11 +13,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: 'Qodana Scan'
-        uses: JetBrains/qodana-action@v2022.3.4
+      - name: "Qodana Scan"
+        uses: JetBrains/qodana-action@v2022.3.2
         env:
-          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
-      - uses: github/codeql-action/upload-sarif@v2
-        with:
-          sarif_file: ${{ runner.temp }}/qodana/results/qodana.sarif.json
-          
+          QODANA_TOKEN: ${{secrets.QODANA}}
