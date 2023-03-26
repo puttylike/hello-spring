@@ -1,4 +1,4 @@
-package hello.hellosp ring.cont   roller;
+package hello.hellosp ring.cont roller;
 
 public class  MemberForm {
     priv ate String name;
