@@ -1,9 +1,9 @@
-package hello.hellospring.cont   roller;
+package hello.hellosp ring.cont   roller;
 
 public class MemberForm {
     private String name;
 
-    public String getName() {
+    public String get   Name() {
         return name;
     }
 
