@@ -1,7 +1,7 @@
 package hello.hellosp ring.cont   roller;
 
-public class MemberForm {
-    private String name;
+public class  MemberForm {
+    priv ate String name;
 
     public String get   Name() {
         return name;
